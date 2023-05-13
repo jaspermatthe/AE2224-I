@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-excel_path = Path(r'/home/jasper/Documents/data_group_c09/Rash/Data_C09_Integral.xlsx')
+excel_path = Path(r'/home/jasper/Documents/data_group_c09/Version 2/Data_C09_Integral.xlsx')
 
 
 
