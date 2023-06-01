@@ -161,7 +161,7 @@ def sort_alpha_value(data, column_index):
       arr_12 = np.vstack([arr_12, row])
 
   # Return the sorted arrays
-  return arr_neg12, arr_neg10, arr_neg8, arr_neg6, arr_neg4, arr_neg2, arr_0, arr_2, arr_4, arr_6, arr_8, arr_10, arr_12
+  return [arr_neg12, arr_neg10, arr_neg8, arr_neg6, arr_neg4, arr_neg2, arr_0, arr_2, arr_4, arr_6, arr_8, arr_10, arr_12]
 
 
 # # split into propulsive and regenerative regimes based on value of current, 'I_M'

@@ -1,0 +1,15 @@
+Prop:
+beta 15 (anything 0.75 or greater must be moved to regen)
+J = 0.55 - 0.70
+
+beta 30 (anything 1.40 or greater must be moved to regen)
+J = 0.90 - 1.30
+
+
+
+Regen:
+beta 15
+J = 0.75 - 1.50
+
+beta 30
+J = 1.40 - 2.10
