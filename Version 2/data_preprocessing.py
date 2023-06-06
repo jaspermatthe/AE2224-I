@@ -116,12 +116,12 @@ def sort_J_bin(data_array, column_index):
 
 def sort_alpha_value(data, column_index):
   # Create empty arrays for each value
-  arr_neg12 = np.empty((0, data.shape[1]))
-  arr_neg10 = np.empty((0, data.shape[1]))
-  arr_neg8 = np.empty((0, data.shape[1]))
-  arr_neg6 = np.empty((0, data.shape[1]))
-  arr_neg4 = np.empty((0, data.shape[1]))
-  arr_neg2 = np.empty((0, data.shape[1]))
+  # arr_neg12 = np.empty((0, data.shape[1]))
+  # arr_neg10 = np.empty((0, data.shape[1]))
+  # arr_neg8 = np.empty((0, data.shape[1]))
+  # arr_neg6 = np.empty((0, data.shape[1]))
+  # arr_neg4 = np.empty((0, data.shape[1]))
+  # arr_neg2 = np.empty((0, data.shape[1]))
   arr_0 = np.empty((0, data.shape[1]))
   arr_2 = np.empty((0, data.shape[1]))
   arr_4 = np.empty((0, data.shape[1]))
@@ -133,19 +133,19 @@ def sort_alpha_value(data, column_index):
   # Loop over rows in the data and sort them into the appropriate arrays
   for row in data:
     value = row[column_index]
-    if value == -12:
-      arr_neg12 = np.vstack([arr_neg12, row])
-    elif value == -10:
-      arr_neg10 = np.vstack([arr_neg10, row])
-    elif value == -8:
-      arr_neg8 = np.vstack([arr_neg8, row])
-    elif value == -6:
-      arr_neg6 = np.vstack([arr_neg6, row])
-    elif value == -4:
-      arr_neg4 = np.vstack([arr_neg4, row])
-    elif value == -2:
-      arr_neg2 = np.vstack([arr_neg2, row])
-    elif value == 0:
+    # if value == -12:
+    #   arr_neg12 = np.vstack([arr_neg12, row])
+    # elif value == -10:
+    #   arr_neg10 = np.vstack([arr_neg10, row])
+    # elif value == -8:
+    #   arr_neg8 = np.vstack([arr_neg8, row])
+    # elif value == -6:
+    #   arr_neg6 = np.vstack([arr_neg6, row])
+    # elif value == -4:
+    #   arr_neg4 = np.vstack([arr_neg4, row])
+    # elif value == -2:
+    #   arr_neg2 = np.vstack([arr_neg2, row])
+    if value == 0:
       arr_0 = np.vstack([arr_0, row])
     elif value == 2:
       arr_2 = np.vstack([arr_2, row])
@@ -161,7 +161,9 @@ def sort_alpha_value(data, column_index):
       arr_12 = np.vstack([arr_12, row])
 
   # Return the sorted arrays
-  return [arr_neg12, arr_neg10, arr_neg8, arr_neg6, arr_neg4, arr_neg2, arr_0, arr_2, arr_4, arr_6, arr_8, arr_10, arr_12]
+  # return [arr_neg12, arr_neg10, arr_neg8, arr_neg6, arr_neg4, arr_neg2, arr_0, arr_2, arr_4, arr_6, arr_8, arr_10, arr_12]
+  return [arr_0, arr_2, arr_4, arr_6, arr_8, arr_10, arr_12]
+
 
 
 # # split into propulsive and regenerative regimes based on value of current, 'I_M'
